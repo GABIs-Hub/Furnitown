@@ -2,10 +2,10 @@
 
 /* DESIGN TOKENS (CSS Variables) */
 :root {
-    /* Color Palette derived from Figma screenshots */
-    --primary-color: #0F3A20;       /* Deep Forest Green */
-    --primary-light: #175831;       /* Lighter green for hovers */
-    --accent-color: #E7B10A;        /* Warm Gold / Yellow accent */
+    /* Color Palette derived from Figma */
+    --primary-color: #005B35;       /* Deep Forest Green */
+    --primary-light: #1ba050;       /* Lighter green for hovers */
+    --accent-color: #FC0;        /* Warm Gold / Yellow accent */
     --accent-hover: #C59600;        /* Darker gold for hovers */
     --text-dark: #111111;           /* Main headings & body text */
     --text-muted: #666666;          /* Secondary/sub-text */
