@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+/* DESIGN TOKENS (CSS Variables) */
+:root {
+    /* Color Palette derived from Figma screenshots */
+    --primary-color: #0F3A20;       /* Deep Forest Green */
+    --primary-light: #175831;       /* Lighter green for hovers */
+    --accent-color: #E7B10A;        /* Warm Gold / Yellow accent */
+    --accent-hover: #C59600;        /* Darker gold for hovers */
+    --text-dark: #111111;           /* Main headings & body text */
+    --text-muted: #666666;          /* Secondary/sub-text */
+    --bg-light: #F9F9F7;            /* Off-white background used in sections */
+    --bg-white: #FFFFFF;            /* Pure white background */
+    --border-color: #E5E5E5;        /* Light gray border for lines/cards */
+
+    /* Typography */
+    --font-main: 'Inter', sans-serif;
+
+    /* Layout & Spacing Constants */
+    --max-width: 1200px;
+    --transition-smooth: all 0.3s ease;
+    --border-radius-sm: 4px;
+    --border-radius-md: 8px;
+}
+
+/* CSS RESET (Standardizes behavior across browsers) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px; /* Base font size */
+}
+
+body {
+    font-family: var(--font-main);
+    background-color: var(--bg-white);
+    color: var(--text-dark);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Typography Resets */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-dark);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: var(--transition-smooth);
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    display: block; /* Removes unwanted bottom space in inline elements */
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: inherit;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+/*  UTILITY & LAYOUT CLASSES (Shared across sections) */
+/* Wraps content to the center of the page with responsive padding */
+.container {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+/* Section spacing baseline */
+.section-padding {
+    padding: 80px 0;
+}
+
+@media (max-width: 768px) {
+    .section-padding {
+        padding: 48px 0;
+    }
+}
+
+/* Utility visibility helper for star ratings or icons */
+.flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* GLOBAL COMPONENTS (Reusable UI elements) */
+/* Primary Button (Deep Green style seen on Hero/Shop buttons) */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    padding: 12px 28px;
+    font-weight: 500;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-smooth);
+    text-align: center;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-light);
+}
+
+/* Secondary Button (Gold style seen on sale/discount CTA buttons) */
+.btn-accent {
+    display: inline-block;
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    padding: 12px 28px;
+    font-weight: 600;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-smooth);
+    text-align: center;
+}
+
+.btn-accent:hover {
+    background-color: var(--accent-hover);
+}
+
+/* Outline Button (Seen on lighter alternative CTAs) */
+.btn-outline {
+    display: inline-block;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 26px;
+    font-weight: 500;
+    border-radius: var(--border-radius-sm);
+    transition: var(--transition-smooth);
+    text-align: center;
+}
+
+.btn-outline:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+}

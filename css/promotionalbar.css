@@ -1,0 +1,60 @@
+/* PROMOTIONAL BAR STYLES */
+
+.promo-bar {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.promo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* --- Center Text Styling --- */
+.promo-text strong {
+    font-weight: 700;
+}
+
+.promo-link {
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.promo-link:hover {
+    color: var(--accent-hover);
+    text-decoration: none;
+}
+
+/* --- Social Icons --- */
+.promo-socials {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    transition: var(--transition-smooth);
+}
+
+.social-icon:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+.social-icon img {
+    width: 12px;
+    height: 12px;
+}
