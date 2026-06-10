@@ -7,7 +7,7 @@
     --primary-light: #1ba050;       /* Lighter green for hovers */
     --accent-color: #FC0;        /* Warm Gold / Yellow accent */
     --accent-hover: #C59600;        /* Darker gold for hovers */
-    --text-dark: #111111;           /* Main headings & body text */
+    --text-dark: #222222;           /* Main headings & body text */
     --text-muted: #666666;          /* Secondary/sub-text */
     --bg-light: #F3F4F3;            /* Off-white background used in sections */
     --bg-white: #FFFFFF;            /* Pure white background */
@@ -17,7 +17,7 @@
     --font-main: 'Inter', sans-serif;
 
     /* Layout & Spacing Constants */
-    --max-width: 1200px;
+    --max-width: 1440px;
     --transition-smooth: all 0.3s ease;
     --border-radius-sm: 4px;
     --border-radius-md: 8px;
