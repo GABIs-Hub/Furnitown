@@ -1,5 +1,5 @@
 
-.Testimonials.css{
+.testimonials {
     background-color: var(--bg-light);
     padding: 100px 0;
     text-align: center;
@@ -23,4 +23,23 @@
     right: auto;
     font-size: auto;
     color: var(--primary-color);
+}
+
+.client-name{
+    font-size: 16px;
+    color: #222222;
+    font-weight: 700;
+    line-height: 22px;
+}
+
+.client-role{
+    font-size: 12px;
+    color: #666666;
+    line-height: 16px;
+}
+.client-rating{
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 400;
+    color:#FC0;
 }
