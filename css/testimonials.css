@@ -6,8 +6,11 @@
 }
 .testimonial-heading{
     font-size: 12px;
-    color: var(--text-light); 
+    color: var(--text-muted); 
     margin-bottom: 10px;
+    font-weight: 700px;
+    line-height: 16px;
+    @font-face: var(--font-main);
 }
 
 .large-heading{
@@ -59,7 +62,7 @@
     position: relative;
     max-width: 500px;
     flex: 1 1 300px;
-    top: 267px;
+    top: 267px
     left: 190px;
 }
 .client-avatar {
@@ -83,4 +86,6 @@
     line-height: 22px;
     font-weight: 700;
     color: var(--text-dark);
+ 
 }
+
