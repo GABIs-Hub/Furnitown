@@ -1,12 +1,19 @@
 
-
+.Testimonials.css{
+    background-color: var(--bg-light);
+    padding: 100px 0;
+    text-align: center;
+}
 .Testimonial-heading{
- Background-color: #F3F4F3;
- padding : 100px 0;
- text-align: center;
+    font-size: 12px;
+    color:#666666; 
+    margin-bottom: 10px;
 }
 
 .Large-Heading{
     font-weight: 700;
     font-size: 40px;
+    color: #1D2B24;
+    margin-bottom: 60px;
 }
+
