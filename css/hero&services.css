@@ -2,6 +2,7 @@
 .hero-section { 
     padding: 80px 0; 
     overflow: hidden; 
+    background: var(--bg-light);
 }
 
 .hero-container { 
