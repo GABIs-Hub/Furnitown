@@ -7,17 +7,25 @@
 
 .nav-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .brand-logo {
+    flex: 1;
     display: flex;
+    justify-content: flex-start;
     align-items: center;
     gap: 10px;
     font-size: 24px;
     font-weight: 700;
+    padding: 0 120px;
     color: var(--text-dark);
+    transition: var(--transition-smooth);
+}
+
+.brand-logo:hover {
+    color: var(--primary-light);
+    transform: translateY(-2px) translateX(2px) translateZ(0);
 }
 
 .brand-logo img {
@@ -26,6 +34,7 @@
 
 .nav-links {
     display: flex;
+    justify-content: center;
     gap: 40px;
 }
 
@@ -33,5 +42,57 @@
     font-size: 15px;
     font-weight: 500;
     color: var(--text-muted);
+    position: relative;
+    padding-bottom: 4px;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    transition: transform 0.3s ease, width 0.5s ease;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links a.active {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+.nav-links a.active::after {
+    width: 100%;
+}
+
+.nav-icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 24px;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.icon-btn {
+    display: flex;
     transition: var(--transition-smooth);
+}
+
+.icon-btn:hover {
+    color: var(--primary-light);
+    transform: translateY(-2px);
+}
+
+.icon-btn img {
+    height: 40px;
+    width: 40px;
 }

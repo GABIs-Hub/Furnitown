@@ -1,0 +1,109 @@
+/* Hero Layout */
+.hero-section { 
+    padding: 80px 0; 
+    overflow: hidden; 
+}
+
+.hero-container { 
+    display: flex; 
+    align-items: center; 
+    gap: 60px; 
+}
+
+/* Typography & Badges */
+.hero-title { 
+    font-size: 56px; 
+    font-weight: 700; 
+    color: var(--text-dark); 
+    margin-bottom: 24px; 
+}
+
+.hero-title 
+
+.highlight { 
+    color: var(--primary-color); 
+}
+
+.hero-badge { 
+    display: inline-flex; 
+    align-items: center; 
+    gap: 8px; 
+    background: var(--bg-light); 
+    color: var(--primary-color); 
+    padding: 10px 20px; 
+    border-radius: 50px; 
+}
+
+/* Pill Buttons */
+.btn { 
+    padding: 16px 40px; 
+    border-radius: 50px; 
+    font-weight: 600; 
+    text-decoration: none; 
+    transition: 0.3s; 
+}
+
+.btn-primary { 
+    background: var(--primary-color); 
+    color: var(--bg-white); 
+}
+
+.btn-outline { 
+    background: var(--bg-white); 
+    color: var(--text-dark); 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05); 
+}
+
+/* Interactive Hotspots */
+.hotspot { 
+    position: absolute; 
+    width: 12px; 
+    height: 12px; 
+    background: var(--bg-white); 
+    border-radius: 50%; 
+    border: 2px solid var(--primary-color); 
+}
+
+.hotspot-price { 
+    background: var(--bg-white); 
+    padding: 5px 10px; 
+    border-radius: 20px; 
+    font-size: 12px; 
+    font-weight: 600; 
+}
+
+/* Card & Slider Layout */
+.category-card { 
+    position: relative; 
+    border-radius: 20px; 
+    overflow: hidden; 
+    width: 400px; 
+}
+
+.card-info { 
+    background: var(--bg-white); 
+    padding: 20px; display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+}
+
+.slider-arrows { 
+    display: flex; 
+    gap: 10px; 
+}
+
+.arrow-btn { 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    border: none; 
+    cursor: pointer; 
+}
+
+.arrow-btn.active { 
+    background: var(--primary-color); 
+}
+
+.arrow-btn.yellow { 
+    background: var(--accent-color); 
+}
