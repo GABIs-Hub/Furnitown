@@ -60,7 +60,6 @@
     
 }
 
-
 .testimonial-card-1 {
     background-color: var(--bg-white);
     padding: 25px;
@@ -80,6 +79,7 @@
     top: 28px;
     left: 28px;
 }
+
 .testimonial-text {
     font-size: 14px;
     line-height: 22px;
@@ -94,6 +94,7 @@
     color: var(--text-dark);
  
 }
+
 .testimonial-card-2 {
     background-color: var(--bg-white);
     padding: 30px;
@@ -114,6 +115,7 @@
     flex: 0 0 400px;
     text-align: left;
 }
+
 .testimonial-card-4 {
     background-color: var(--bg-white);
     padding: 30px;
