@@ -18,9 +18,9 @@
 }
 
 .quote-icon{
-    position:absolute;
-    top:20px
-    right: auto
-    font-size:auto
-    color:var(--primary-color);
+    position: absolute;
+    top: 20px;
+    right: auto;
+    font-size: auto;
+    color: var(--primary-color);
 }
