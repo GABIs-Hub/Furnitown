@@ -1,12 +1,10 @@
-/* ==========================================================================
-   HERO SECTION: DEEP REWORK
-   ========================================================================== */
+/* HERO SECTION: DEEP REWORK */
 
 /* 1. Core Layout Mechanics */
 .hero-section {
     padding: 80px 0;
-    overflow-x: hidden; /* CRITICAL: Hides the second card bleeding off screen */
-    background-color: var(--bg-color, #FAFAFA); /* Subtle off-white to make cards pop */
+    overflow-x: hidden; /* Hides the overflowing carousel */
+    background-color: var(--bg-light);
 }
 
 .hero-container {
@@ -17,25 +15,25 @@
 
 .hero-content {
     width: 45%; /* Locks the left side width */
-    flex-shrink: 0; /* Prevents the large slider from crushing the text */
+    flex-shrink: 0; /* Prevents it from shrinking when the carousel overflows */
 }
 
 /* 2. Text & Buttons */
 .hero-badge {
     display: inline-flex;
     align-items: center;
-    gap: 10px;
-    background: #EBF3ED;
+    gap: 2px;
+    background-color: var(--border-color);
     color: var(--primary-color);
-    padding: 10px 20px;
+    padding: 5px 15px;
     border-radius: 50px;
     font-weight: 600;
     font-size: 14px;
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .hero-title {
-    font-size: 56px;
+    font-size: 46px;
     font-weight: 700;
     line-height: 1.15;
     color: var(--text-dark);
@@ -48,14 +46,15 @@
 
 .hero-description {
     font-size: 16px;
-    color: var(--text-light);
+    color: var(--text-muted);
     line-height: 1.6;
-    margin-bottom: 40px;
+    margin-bottom: 24px;
+
 }
 
 .hero-buttons {
     display: flex;
-    gap: 16px;
+    gap: 10px;
     margin-bottom: 40px;
 }
 
@@ -96,31 +95,19 @@
     gap: 20px;
 }
 
-.avatars {
-    display: flex;
-    align-items: center;
-}
-
-.avatars img, .plus-icon {
+.plus-icon {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    border: 3px solid var(--bg-white, #fff);
+    border: 3px solid var(--bg-white);
     margin-left: -14px;
-    object-fit: cover;
-}
-
-.avatars img:first-child { margin-left: 0; }
-
-.plus-icon {
-    background: #FFB800;
-    color: var(--text-dark);
+    background-color: var(--accent-color);
+    color: var(--text-muted);
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: 700;
     font-size: 18px;
-    z-index: 5; /* Keeps it on top of the images */
 }
 
 .sc-stats {
@@ -187,27 +174,6 @@
     margin: 16px auto 0 auto;
 }
 
-/* Hotspots */
-.hotspot-dot {
-    position: absolute;
-    width: 12px;
-    height: 12px;
-    background: white;
-    border-radius: 50%;
-    box-shadow: 0 0 0 6px rgba(255,255,255,0.4); /* Creates the transparent ring */
-}
-
-.price-tag {
-    position: absolute;
-    background: rgba(0,0,0,0.4);
-    backdrop-filter: blur(4px); /* Frosty glass effect */
-    border: 1px solid white;
-    color: white;
-    padding: 6px 14px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 500;
-}
 
 /* 6. Card Meta & Navigation */
 .fc-meta {
