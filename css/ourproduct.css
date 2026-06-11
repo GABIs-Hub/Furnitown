@@ -1,6 +1,6 @@
 .prod-sect {
     padding: 80px 0 0;
-    
+
 }
 
 .product-card {
@@ -71,4 +71,137 @@
 .feat-buttons button:nth-child(2) {
     background-color: var(--primary-color);
     color: white;
+}
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 1024px) {
+    .products-section {
+        padding: 50px 30px;
+    }
+
+    .image-container {
+        padding: 0 20px;
+        transform: translateX(-80px);
+        gap: 1.5rem;
+    }
+
+    .product-card {
+        width: 350px;
+    }
+
+    .product-heading h2 {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    .feat-buttons {
+        gap: 0.75rem;
+        margin-bottom: 24px;
+        flex-wrap: wrap;
+    }
+
+    .feat-buttons button {
+        padding: 0.6rem 1.2rem;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 768px) {
+    .prod-sect {
+        padding: 60px 0 0;
+    }
+
+    .products-section {
+        padding: 40px 16px;
+    }
+
+    .image-container {
+        flex-wrap: wrap;
+        transform: none;
+        padding: 0;
+        gap: 16px;
+        justify-content: center;
+    }
+
+    .product-card {
+        width: calc(50% - 8px);
+        flex-shrink: 1;
+        padding: 12px;
+    }
+
+    .products-label {
+        font-size: 12px;
+        margin-bottom: 8px;
+    }
+
+    .product-heading h2 {
+        font-size: 22px;
+        margin-bottom: 16px;
+    }
+
+    .feat-buttons {
+        gap: 8px;
+        margin-bottom: 20px;
+    }
+
+    .feat-buttons button {
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    .product-card > div:last-child {
+        padding: 8px;
+    }
+
+    .product-card p {
+        font-size: 12px;
+        margin: 2px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .prod-sect {
+        padding: 48px 0 0;
+    }
+
+    .products-section {
+        padding: 32px 12px;
+    }
+
+    .image-container {
+        gap: 12px;
+    }
+
+    .product-card {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .products-label {
+        font-size: 11px;
+    }
+
+    .product-heading h2 {
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+
+    .feat-buttons {
+        gap: 6px;
+        margin-bottom: 16px;
+    }
+
+    .feat-buttons button {
+        padding: 6px 12px;
+        font-size: 11px;
+    }
+
+    .product-card > div:last-child {
+        padding: 6px;
+    }
+
+    .product-card p {
+        font-size: 11px;
+    }
 }

@@ -99,9 +99,25 @@ button {
   padding: 80px 0;
 }
 
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .section-padding {
     padding: 48px 0;
+  }
+
+  .container {
+    padding: 0 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
   }
 }
 
@@ -129,6 +145,13 @@ button {
   background-color: var(--primary-light);
 }
 
+@media (max-width: 768px) {
+  .btn-primary {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+}
+
 /* Secondary Button (Gold style seen on sale/discount CTA buttons) */
 .btn-accent {
   display: inline-block;
@@ -143,6 +166,13 @@ button {
 
 .btn-accent:hover {
   background-color: var(--accent-hover);
+}
+
+@media (max-width: 768px) {
+  .btn-accent {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
 }
 
 /* Outline Button (Seen on lighter alternative CTAs) */
@@ -160,4 +190,11 @@ button {
 .btn-outline:hover {
   background-color: var(--primary-color);
   color: var(--bg-white);
+}
+
+@media (max-width: 768px) {
+  .btn-outline {
+    padding: 8px 18px;
+    font-size: 14px;
+  }
 }

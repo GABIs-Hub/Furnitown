@@ -129,13 +129,19 @@
 }
 
 @media (max-width: 900px) {
+    .deals-section {
+        padding: 0 16px 30px;
+    }
+
     .deals-grid {
         grid-template-columns: repeat(2, 1fr);
+        gap: 16px;
     }
 
     .product-card {
         flex-direction: column;
         align-items: stretch;
+        padding: 10px;
     }
 
     .product-image {
@@ -144,15 +150,118 @@
         min-width: auto;
     }
 
+    .product-info h4 {
+        font-size: 14px;
+    }
+
     /* Ensure reversed cards stack normally on small screens */
     .deals-grid .product-card:nth-child(3),
     .deals-grid .product-card:nth-child(4) {
         flex-direction: column;
     }
+
+    .deals-grid .product-card:nth-child(3) .product-info h4,
+    .deals-grid .product-card:nth-child(4) .product-info h4 {
+        font-size: 20px;
+    }
 }
 
-@media (max-width: 560px) {
+@media (max-width: 768px) {
+    .deals-section {
+        margin: 24px auto;
+        padding: 0 16px 24px;
+    }
+
+    .deals-header h3 {
+        font-size: 18px;
+    }
+
+    .deals-sub {
+        font-size: 13px;
+    }
+
     .deals-grid {
         grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .product-card {
+        flex-direction: row;
+        gap: 12px;
+    }
+
+    .product-image {
+        width: 35%;
+        height: 140px;
+    }
+
+    .product-info {
+        padding: 4px 8px;
+        gap: 6px;
+    }
+
+    .product-info h4 {
+        font-size: 13px;
+    }
+
+    .product-info .price {
+        font-size: 12px;
+    }
+
+    .shop-now {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .deals-section {
+        margin: 16px auto;
+        padding: 0 12px 16px;
+    }
+
+    .deals-header h3 {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+
+    .deals-sub {
+        font-size: 12px;
+        margin-bottom: 12px;
+    }
+
+    .deals-grid {
+        gap: 12px;
+    }
+
+    .product-card {
+        padding: 8px;
+        gap: 10px;
+    }
+
+    .product-image {
+        width: 30%;
+        height: 120px;
+        min-width: 80px;
+    }
+
+    .product-info {
+        padding: 2px 6px;
+        gap: 4px;
+    }
+
+    .product-info h4 {
+        font-size: 12px;
+    }
+
+    .product-info .price {
+        font-size: 11px;
+    }
+
+    .rating {
+        font-size: 11px;
+    }
+
+    .shop-now {
+        font-size: 11px;
     }
 }

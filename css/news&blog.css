@@ -159,4 +159,159 @@
 .nb-read:hover {
   text-decoration: underline;}
 
+/* RESPONSIVE STYLES */
+
+@media (max-width: 1024px) {
+  .nb-section {
+    padding: 50px 30px;
+  }
+
+  .nb-header {
+    margin-bottom: 32px;
+  }
+
+  .nb-title {
+    font-size: 26px;
+    width: 100%;
+  }
+
+  .nb-grid {
+    gap: 40px;
+    padding: 0 20px;
+  }
+
+  .nb-card-1,
+  .nb-card-2,
+  .nb-card-3 {
+    max-width: 350px;
+    flex: 0 0 350px;
+  }
+
+  .nb-btn {
+    padding: 10px 20px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nb-section {
+    padding: 40px 16px;
+  }
+
+  .nb-header {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 24px;
+  }
+
+  .nb-eyebrow {
+    font-size: 14px;
+  }
+
+  .nb-title {
+    font-size: 22px;
+    width: 100%;
+    margin-bottom: 16px;
+    line-height: 28px;
+  }
+
+  .nb-btn {
+    align-self: flex-start;
+    padding: 10px 18px;
+    font-size: 12px;
+  }
+
+  .nb-grid {
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 0;
+    overflow-x: visible;
+  }
+
+  .nb-card-1,
+  .nb-card-2,
+  .nb-card-3 {
+    flex: 0 1 calc(50% - 10px);
+    max-width: 100%;
+    padding: 20px;
+  }
+
+  .nb-img {
+    height: 140px;
+  }
+
+  .nb-body {
+    padding: 16px;
+  }
+
+  .nb-card-title {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+
+  .nb-desc {
+    font-size: 12px;
+    margin-bottom: 12px;
+  }
+
+  .nb-read {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nb-section {
+    padding: 32px 12px;
+  }
+
+  .nb-eyebrow {
+    font-size: 12px;
+  }
+
+  .nb-title {
+    font-size: 18px;
+    margin-bottom: 12px;
+    line-height: 24px;
+  }
+
+  .nb-btn {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 12px;
+  }
+
+  .nb-grid {
+    gap: 16px;
+  }
+
+  .nb-card-1,
+  .nb-card-2,
+  .nb-card-3 {
+    flex: 0 1 100%;
+    padding: 16px;
+  }
+
+  .nb-img {
+    height: 120px;
+  }
+
+  .nb-body {
+    padding: 12px;
+  }
+
+  .nb-card-title {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .nb-desc {
+    font-size: 11px;
+    margin-bottom: 10px;
+  }
+
+  .nb-read {
+    font-size: 11px;
+  }
+}
+
 

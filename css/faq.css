@@ -85,3 +85,100 @@ details[open] summary {
 details[open] summary::after {
   color: #ffffff;
 }
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 1024px) {
+  .faq {
+    padding: 60px 40px;
+  }
+
+  summary {
+    font-size: 16px;
+  }
+
+  details {
+    padding: 16px;
+  }
+
+  details p {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq {
+    padding: 40px 20px;
+  }
+
+  .small-title {
+    font-size: 11px;
+  }
+
+  h1 {
+    font-size: 24px;
+    margin: 16px 0 24px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  summary {
+    font-size: 15px;
+  }
+
+  summary::after {
+    font-size: 20px;
+  }
+
+  details {
+    padding: 14px;
+    margin-bottom: 12px;
+  }
+
+  details p {
+    margin-top: 12px;
+    font-size: 13px;
+    line-height: 1.6;
+  }
+}
+
+@media (max-width: 480px) {
+  .faq {
+    padding: 32px 16px;
+  }
+
+  .small-title {
+    font-size: 10px;
+  }
+
+  h1 {
+    font-size: 18px;
+    margin: 12px 0 16px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+
+  summary {
+    font-size: 13px;
+  }
+
+  summary::after {
+    font-size: 18px;
+  }
+
+  details {
+    padding: 12px;
+    margin-bottom: 10px;
+  }
+
+  details p {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 1.5;
+  }
+}
