@@ -1,72 +1,95 @@
-.highlight{     /*Number highlights sorted out*/
+.highlight {
     color: var(--accent-color);
     font-weight: bolder;
 }
 
-.card-description span { /*Card description for Loren ipsum sorted out*/
+.card-description span {
     display: block;
 }
 
-.card-large{ 
-    flex: 2;
-  display: flex;
-  justify-content: space-between;
-  padding: 20px;
-  box-sizing: border-box;
-  
-  
-   
+.category-section {
+    display: flex;
+    gap: 24px;
+    align-items: flex-start;
+    padding: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    transform: translateX(-130px);
 }
 
-.category-section {
-  display: flex;
-  gap: 24px;
-  align-items: stretch;
-  padding: 40px;        
-  margin: 0;           
-  width: 100%;
-  box-sizing: border-box;
+.card-large {
+    flex: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 24px;
+    gap: 20px;
+    border-radius: 16px;
 }
+
 .right-column {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  margin: 12px;
-  
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    margin: 0;
+}
+
+.card,
+.card-large {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 16px;
 }
 
 .card-content {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  letter-spacing: 0.7px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    letter-spacing: 0.7px;
 }
-    
-.category-lists{
+
+.category-lists {
     letter-spacing: 1px;
     line-height: 3.2;
 }
+
+.category-list,
+.category-lists {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.card-image-wrapper {
+    flex-shrink: 0;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.image-sofa,
+.image-chairs,
+.image-lighting {
+    width: 260px;
+}
 .card,
 .card-large {
-  display: flex;
-  justify-content: space-between;
-  align-items: stretch;
-  padding: 20px;
-  border-radius: 16px;
+    background: var(--bg-white);
+    border: 3px solid rgba(0, 0, 0, 0.06);
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    transition: all 0.25s ease;
 }
-    
-.card-image-wrapper img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  object-fit: contain;
-  
-}
-
-.image-sofa{
-    width: 450px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
