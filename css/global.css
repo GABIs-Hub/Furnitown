@@ -1,154 +1,163 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 /* DESIGN TOKENS (CSS Variables) */
 :root {
-    /* Color Palette derived from Figma */
-    --primary-color: #005B35;       /* Deep Forest Green */
-    --primary-light: #1ba050;       /* Lighter green for hovers */
-    --accent-color: #FC0;        /* Warm Gold / Yellow accent */
-    --accent-hover: #836400;        /* Darker gold for hovers */
-    --text-dark: #222222;           /* Main headings & body text */
-    --text-muted: #666666;          /* Secondary/sub-text */
-    --bg-light: #F3F4F3;            /* Off-white background used in sections */
-    --bg-white: #FFFFFF;            /* Pure white background */
-    --border-color: #E7EAE7;        /* Light gray border for lines/cards */
+  /* Color Palette derived from Figma */
+  --primary-color: #005b35; /* Deep Forest Green */
+  --primary-light: #1ba050; /* Lighter green for hovers */
+  --accent-color: #fc0; /* Warm Gold / Yellow accent */
+  --accent-hover: #836400; /* Darker gold for hovers */
+  --text-dark: #222222; /* Main headings & body text */
+  --text-muted: #666666; /* Secondary/sub-text */
+  --bg-light: #f3f4f3; /* Off-white background used in sections */
+  --bg-white: #ffffff; /* Pure white background */
+  --border-color: #e7eae7; /* Light gray border for lines/cards */
 
-    /* Typography */
-    --font-main: 'Inter', sans-serif;
+  /* Typography */
+  --font-main: "Inter", sans-serif;
 
-    /* Layout & Spacing Constants */
-    --max-width: 1440px;
-    --transition-smooth: all 0.3s ease;
-    --border-radius-sm: 4px;
-    --border-radius-md: 8px;
+  /* Layout & Spacing Constants */
+  --max-width: 1440px;
+  --transition-smooth: all 0.3s ease;
+  --border-radius-sm: 4px;
+  --border-radius-md: 8px;
 }
 
 /* CSS RESET (Standardizes behavior across browsers) */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
-    font-size: 16px; /* Base font size */
+  scroll-behavior: smooth;
+  font-size: 16px; /* Base font size */
 }
 
 body {
-    font-family: var(--font-main);
-    background-color: var(--bg-white);
-    color: var(--text-dark);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
+  font-family: var(--font-main);
+  background-color: var(--bg-white);
+  color: var(--text-dark);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
 }
 
 /* Typography Resets */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 700;
-    line-height: 1.2;
-    color: var(--text-dark);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text-dark);
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
-    transition: var(--transition-smooth);
+  text-decoration: none;
+  color: inherit;
+  transition: var(--transition-smooth);
 }
 
-ul, ol {
-    list-style: none;
+ul,
+ol {
+  list-style: none;
 }
 
 img {
-    max-width: 100%;
-    display: block; /* Removes unwanted bottom space in inline elements */
+  max-width: 100%;
+  display: block; /* Removes unwanted bottom space in inline elements */
 }
 
-button, input, select, textarea {
-    font-family: inherit;
-    font-size: inherit;
-    border: none;
-    outline: none;
-    background: none;
+button,
+input,
+select,
+textarea {
+  font-family: inherit;
+  font-size: inherit;
+  border: none;
+  outline: none;
+  background: none;
 }
 
 button {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 /*  UTILITY & LAYOUT CLASSES (Shared across sections) */
 /* Wraps content to the center of the page with responsive padding */
 .container {
-    max-width: var(--max-width);
-    margin: 0 auto;
-    padding: 0 24px;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px;
 }
 
 /* Section spacing baseline */
 .section-padding {
-    padding: 80px 0;
+  padding: 80px 0;
 }
 
 @media (max-width: 768px) {
-    .section-padding {
-        padding: 48px 0;
-    }
+  .section-padding {
+    padding: 48px 0;
+  }
 }
 
 /* Utility visibility helper for star ratings or icons */
 .flex-center {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* GLOBAL COMPONENTS (Reusable UI elements) */
 /* Primary Button (Deep Green style seen on Hero/Shop buttons) */
 .btn-primary {
-    display: inline-block;
-    background-color: var(--primary-color);
-    color: var(--bg-white);
-    padding: 12px 28px;
-    font-weight: 500;
-    border-radius: var(--border-radius-sm);
-    transition: var(--transition-smooth);
-    text-align: center;
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: var(--bg-white);
+  padding: 12px 28px;
+  font-weight: 500;
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition-smooth);
+  text-align: center;
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-light);
+  background-color: var(--primary-light);
 }
 
 /* Secondary Button (Gold style seen on sale/discount CTA buttons) */
 .btn-accent {
-    display: inline-block;
-    background-color: var(--accent-color);
-    color: var(--text-dark);
-    padding: 12px 28px;
-    font-weight: 600;
-    border-radius: var(--border-radius-sm);
-    transition: var(--transition-smooth);
-    text-align: center;
+  display: inline-block;
+  background-color: var(--accent-color);
+  color: var(--text-dark);
+  padding: 12px 28px;
+  font-weight: 600;
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition-smooth);
+  text-align: center;
 }
 
 .btn-accent:hover {
-    background-color: var(--accent-hover);
+  background-color: var(--accent-hover);
 }
 
 /* Outline Button (Seen on lighter alternative CTAs) */
 .btn-outline {
-    display: inline-block;
-    border: 2px solid var(--primary-color);
-    color: var(--primary-color);
-    padding: 10px 26px;
-    font-weight: 500;
-    border-radius: var(--border-radius-sm);
-    transition: var(--transition-smooth);
-    text-align: center;
+  display: inline-block;
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  padding: 10px 26px;
+  font-weight: 500;
+  border-radius: var(--border-radius-sm);
+  transition: var(--transition-smooth);
+  text-align: center;
 }
 
 .btn-outline:hover {
-    background-color: var(--primary-color);
-    color: var(--bg-white);
+  background-color: var(--primary-color);
+  color: var(--bg-white);
 }
