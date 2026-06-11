@@ -12,9 +12,8 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 100%;
     margin: 0 auto;
-    padding: 2rem;
 }
 
 
@@ -219,46 +218,4 @@ body {
 
 .language-currency:hover {
     color: #B86B2C;
-}
-
-/* ========== RESPONSIVE ========== */
-@media (max-width: 900px) {
-    .container {
-        padding: 1.5rem;
-    }
-    .footer-grid {
-        gap: 1.5rem;
-    }
-}
-
-@media (max-width: 700px) {
-    .newsletter-block {
-        padding: 2rem 1.5rem;
-    }
-    .newsletter-main-heading {
-        font-size: 1.8rem;
-    }
-    .newsletter-sub-line {
-        font-size: 0.95rem;
-    }
-    .footer-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media (max-width: 550px) {
-    .form-row {
-        flex-direction: column;
-    }
-    .subscribe-btn {
-        width: 100%;
-    }
-    .footer-grid {
-        grid-template-columns: 1fr;
-    }
-    .copyright-section {
-        flex-direction: column;
-        gap: 0.5rem;
-        text-align: center;
-    }
 }
