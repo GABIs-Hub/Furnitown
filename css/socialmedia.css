@@ -1,0 +1,40 @@
+.instagram {
+  text-align: center;
+  padding: 100px 25px;
+  background-color: #f3f4f3;
+  font-weight: 700;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.gallery img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  flex-wrap: nowrap;
+  transition: transform 0.3s ease;
+  flex-shrink: 0;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+.small-title2 {
+  color: #666666;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  text-align: center;
+  font-family: inter;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}

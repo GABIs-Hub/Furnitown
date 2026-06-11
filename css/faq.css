@@ -1,0 +1,87 @@
+.faq {
+  width: 100%;
+  padding: 80px;
+  background-color: #ffffff;
+}
+
+.small-title {
+  color: #666666;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0%;
+  text-align: center;
+  font-family: inter;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px 0 40px;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+h2 span {
+  color: #005b35;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+details {
+  border: 1px solid #e7eae7;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  background: #ffffff
+  transition: 0.3s ease;
+  text-align: left;
+}
+
+summary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  list-style: none;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "+";
+  font-size: 24px;
+  color: #005b35;
+}
+
+details[open] summary::after {
+  content: "−";
+  color: #f3f4f3;
+}
+
+details p {
+  margin-top: 15px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #555;
+}
+
+details[open] {
+  background: #005b35;
+  color: #f3f4f3;
+}
+
+details[open] p {
+  color: #f3f4f3;
+}
+
+details[open] summary {
+  color: #ffffff;
+}
+details[open] summary::after {
+  color: #ffffff;
+}
