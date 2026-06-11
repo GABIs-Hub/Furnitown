@@ -8,88 +8,191 @@
 }
 
 .category-section {
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
     gap: 24px;
-    align-items: flex-start;
-    padding: 40px;
-    max-width: 1200px;
+    padding: 60px 40px;
+    max-width: 1400px;
     margin: 0 auto;
     box-sizing: border-box;
-    transform: translateX(-130px);
 }
 
-.card-large {
-    flex: 2;
+.category-card {
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 24px;
-    gap: 20px;
-    border-radius: 16px;
-}
-
-.right-column {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    margin: 0;
-}
-
-.card-large {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding: 20px;
-    gap: 20px;
-    border-radius: 16px;
+    align-items: center;
+    padding: 40px;
+    gap: 30px;
+    border-radius: 20px;
     background-color: var(--bg-light);
+    border: 1px solid var(--border-color);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    transition: all 0.3s ease;
+}
+
+.category-card:hover {
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+}
+
+.category-card-large {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.category-card-small {
+    grid-column: 2 / 3;
+    flex-direction: row;
 }
 
 .card-content {
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    letter-spacing: 0.7px;
+    gap: 14px;
+    flex: 1;
 }
 
-.category-lists {
-    letter-spacing: 1px;
-    line-height: 3.2;
+.badge {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--text-muted);
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    width: fit-content;
 }
 
-.category-list,
-.category-lists {
+.badge .highlight {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.card-title {
+    font-size: 32px;
+    font-weight: 700;
+    margin: 0;
+    color: var(--text-dark);
+    line-height: 1.2;
+}
+
+.category-card-large .card-title {
+    font-size: 40px;
+}
+
+.category-card-small .card-title {
+    font-size: 28px;
+}
+
+.card-description {
+    font-size: 14px;
+    color: var(--text-muted);
+    margin: 8px 0 0 0;
+    line-height: 1.5;
+}
+
+.card-description span {
+    display: inline;
+}
+
+.category-list {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin: 12px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 13px;
+}
+
+.category-list li a {
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.category-list li a:hover {
+    color: var(--primary-color);
+    font-weight: 500;
 }
 
 .card-image-wrapper {
     flex-shrink: 0;
-    width: 260px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.category-card-large .card-image-wrapper {
+    width: 280px;
+    height: auto;
+    aspect-ratio: 416 / 720;
+}
+
+.category-card-small .card-image-wrapper {
+    width: 240px;
+    height: auto;
+}
+
+.image-sofa {
+    aspect-ratio: 682 / 384;
+}
+
+.image-lighting {
+    aspect-ratio: 938 / 528;
+}
+
 .card-image-wrapper img {
     width: 100%;
-    height: auto;
-    display: block;
+    height: 100%;
     object-fit: contain;
 }
 
-.image-sofa,
-.image-chairs,
-.image-lighting {
-    width: 260px;
+@media (max-width: 1024px) {
+    .category-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 40px 20px;
+    }
+
+    .category-card-large {
+        grid-column: 1 / 2;
+        grid-row: auto;
+    }
+
+    .category-card {
+        padding: 30px;
+        gap: 25px;
+    }
+
+    .category-card-large .card-image-wrapper {
+        width: 240px;
+    }
+
+    .category-card-small .card-image-wrapper {
+        width: 200px;
+    }
 }
-.card,
-.card-large {
-    background: var(--bg-white);
-    border: 3px solid rgba(0, 0, 0, 0.06);
-    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
-    border-radius: 16px;
-    transition: all 0.25s ease;
+
+@media (max-width: 768px) {
+    .category-card {
+        flex-direction: column;
+        padding: 24px;
+        gap: 20px;
+    }
+
+    .card-title {
+        font-size: 24px;
+    }
+
+    .category-card-small .card-title {
+        font-size: 22px;
+    }
+
+    .card-image-wrapper {
+        order: -1;
+        width: 100% !important;
+        height: auto !important;
+    }
 }
