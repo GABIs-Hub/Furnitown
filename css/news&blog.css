@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap');
 .nb-read{
   font-family:Inter, sans-serif;
+  align-items: center;
 }
 
 .nb-section {
   background: var(--bg-white);
   padding: 60px 40px;
+  align-items: center;
 }
 
 .nb-header {
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-between;
   margin-bottom: 40px;
 }

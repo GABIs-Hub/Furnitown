@@ -3,6 +3,7 @@
     background-color: var(--bg-light);
     padding: 70px 0;
     text-align: center;
+    align-items: center;
 }
 .testimonial-heading{
     font-size: 20px;
@@ -51,8 +52,8 @@
 .testimonial-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     gap: 60px;
     padding: 0 40px;
     max-width: 100%;
