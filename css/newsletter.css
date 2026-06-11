@@ -1,0 +1,412 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F5F3EF;
+    font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, sans-serif;
+    color: #1A2C3A;
+    line-height: 1.4;
+}
+
+.container {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+
+/* ========== NEWSLETTER SECTION ========== */
+.newsletter-block {
+    background: #FFFFFF;
+    padding: 3rem 2.5rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    border: 1px solid #E8E0D5;
+    text-align: center;
+}
+
+.newsletter-main-heading {
+    font-size: 0.7rem;
+    font-weight: 700;
+    color: #1E2F3C;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.3px;
+}
+
+.newsletter-sub-line1 {
+    font-size: 2rem;
+    color: #4A6272;
+    font-weight:700;
+}
+
+.newsletter-sub-line2 {
+    font-size: 2rem;
+    color: #15221B;
+    margin-bottom: 1.25rem;
+    font-weight: 700;
+}
+
+.offer-badge {
+    background: #FEF5E7;
+    display: inline-block;
+    padding: 0.6rem 1.6rem;
+    border-radius: 40px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #B86B2C;
+    margin-bottom: 2rem;
+    border: 1px solid #F0E2D0;
+}
+
+/* form row */
+.form-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    justify-content: center;
+    max-width: 520px;
+    margin: 0 auto;
+}
+
+.input-group {
+    flex: 2;
+    min-width: 250px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 0.85rem 1.3rem;
+    font-size: 0.95rem;
+    font-family: inherit;
+    border: 1px solid #DDD2C4;
+    border-radius: 50px;
+    background: white;
+    transition: all 0.2s;
+    color: #1A2C3A;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #B86B2C;
+    box-shadow: 0 0 0 3px rgba(184, 107, 44, 0.1);
+}
+
+.input-group input::placeholder {
+    color: #AAB5C0;
+    font-weight: 400;
+}
+
+.subscribe-btn {
+    background: #1E2F3C;
+    color: white;
+    border: none;
+    padding: 0.85rem 2rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: inherit;
+}
+
+.subscribe-btn:hover {
+    background: #2C4456;
+}
+
+/* ========== FOOTER SECTION ========== */
+.footer {
+    background: #004628;
+    padding: 2.5rem 2rem;
+    border: 1px solid #E8E0D5;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 2rem;
+}
+
+/* brand column - Furniture */
+.brand-col h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 0.8rem;
+}
+
+.brand-col p {
+    font-size: 0.85rem;
+    color: #ffffff;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    max-width: 250px;
+}
+
+.address-line, .contact-line {
+    font-size: 0.82rem;
+    margin-top: 0.5rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    flex-wrap: wrap;
+}
+
+.contact-line a {
+    color: #ffffff;
+    text-decoration: none;
+    border-bottom: 1px dotted #C8BBA8;
+}
+
+.contact-line a:hover {
+    color: #B86B2C;
+}
+
+/* footer columns */
+.footer-col h4 {
+    font-size: 0.95rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #ffffff;
+    margin-bottom: 1rem;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col li {
+    margin-bottom: 0.6rem;
+}
+
+.footer-col a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 0.85rem;
+    transition: color 0.2s;
+}
+
+.footer-col a:hover {
+    color: #B86B2C;
+}
+
+/* ========== COPYRIGHT SECTION (NOT YELLOW - matching original UI) ========== */
+.copyright-section {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #F7B309;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0.5rem;
+}
+
+.copyright-text {
+    font-size: 0.75rem;
+    color: #000000;
+}
+
+.language-currency {
+    font-size: 0.75rem;
+    color: #000000;
+    font-weight: 500;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.language-currency:hover {
+    color: #B86B2C;
+}
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 1024px) {
+    .newsletter-block {
+        padding: 2.5rem 2rem;
+    }
+
+    .newsletter-sub-line1,
+    .newsletter-sub-line2 {
+        font-size: 1.5rem;
+    }
+
+    .form-row {
+        max-width: 480px;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .newsletter-block {
+        padding: 2rem 1.5rem;
+    }
+
+    .newsletter-main-heading {
+        font-size: 0.6rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .newsletter-sub-line1,
+    .newsletter-sub-line2 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .offer-badge {
+        padding: 0.5rem 1.2rem;
+        font-size: 0.8rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 10px;
+        max-width: 100%;
+        padding: 0 16px;
+    }
+
+    .input-group {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .input-group input {
+        padding: 0.75rem 1rem;
+        font-size: 0.9rem;
+    }
+
+    .subscribe-btn {
+        width: 100%;
+        padding: 0.75rem 1.5rem;
+        font-size: 0.85rem;
+    }
+
+    .footer {
+        padding: 2rem 1.5rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1.5rem;
+    }
+
+    .brand-col h3 {
+        font-size: 1rem;
+    }
+
+    .brand-col p {
+        font-size: 0.8rem;
+    }
+
+    .address-line,
+    .contact-line {
+        font-size: 0.75rem;
+    }
+
+    .footer-col h4 {
+        font-size: 0.85rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .footer-col a {
+        font-size: 0.8rem;
+    }
+
+    .copyright-section {
+        padding: 1rem 1.5rem;
+    }
+
+    .copyright-text,
+    .language-currency {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .newsletter-block {
+        padding: 1.5rem 1rem;
+    }
+
+    .newsletter-main-heading {
+        font-size: 0.55rem;
+        margin-bottom: 0.4rem;
+    }
+
+    .newsletter-sub-line1,
+    .newsletter-sub-line2 {
+        font-size: 1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .offer-badge {
+        padding: 0.4rem 1rem;
+        font-size: 0.75rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .form-row {
+        padding: 0 12px;
+    }
+
+    .input-group input {
+        padding: 0.65rem 1rem;
+        font-size: 0.85rem;
+    }
+
+    .subscribe-btn {
+        padding: 0.65rem 1.2rem;
+        font-size: 0.8rem;
+    }
+
+    .footer {
+        padding: 1.5rem 1rem;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .brand-col h3 {
+        font-size: 0.95rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .brand-col p {
+        font-size: 0.75rem;
+    }
+
+    .address-line,
+    .contact-line {
+        font-size: 0.7rem;
+    }
+
+    .footer-col h4 {
+        font-size: 0.8rem;
+        margin-bottom: 0.6rem;
+    }
+
+    .footer-col li {
+        margin-bottom: 0.4rem;
+    }
+
+    .footer-col a {
+        font-size: 0.75rem;
+    }
+
+    .copyright-section {
+        padding: 0.75rem 1rem;
+        font-size: 0.65rem;
+    }
+
+    .copyright-text,
+    .language-currency {
+        font-size: 0.65rem;
+    }
+}

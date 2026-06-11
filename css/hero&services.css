@@ -1,0 +1,546 @@
+/* HERO SECTION */
+
+/* 1. Core Layout */
+.hero-section {
+    padding: 60px 0 0 0;
+    background-color: var(--bg-light);
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero-content {
+    width: 40%;
+    flex-shrink: 0;
+}
+
+
+/* Badge */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: transparent;
+    color: var(--primary-color);
+    padding: 0;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+
+.hero-badge img {
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+
+/* Text */
+.hero-title {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.2;
+    color: var(--text-dark);
+    margin-bottom: 24px;
+}
+
+.hero-title .highlight {
+    color: var(--primary-color);
+}
+
+.hero-description {
+    font-size: 15px;
+    color: var(--text-muted);
+    line-height: 1.6;
+    margin-bottom: 32px;
+}
+
+
+/* Buttons */
+.hero-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 48px;
+}
+
+/* "Shop Now" */
+.hero-buttons .btn-primary {
+    padding: 14px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 15px;
+}
+
+/* "View Collection" */
+.hero-buttons .btn-secondary {
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 50px;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 15px;
+    background: transparent;
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.hero-buttons .btn-secondary:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+}
+
+
+/* Customer Reviews Block  */
+.customer-reviews {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+/* The stacked avatar row */
+.avatars {
+    display: flex;
+    align-items: center;
+}
+
+.avatars img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2.5px solid var(--bg-white);
+    margin-left: -10px;
+    object-fit: cover;
+}
+
+.avatars img:first-child {
+    margin-left: 0;
+}
+
+.avatar-plus {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2.5px solid var(--bg-white);
+    margin-left: -10px;
+    background-color: var(--accent-color);
+    color: var(--text-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    font-size: 16px;
+    flex-shrink: 0;
+}
+
+.review-text {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    font-size: 14px;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+.review-text strong {
+    font-size: 15px;
+    font-weight: 700;
+    color: var(--text-dark);
+}
+
+
+/* Hero Visual — Carousel Mechanics  */
+.hero-visual {
+    width: 60%;
+    position: relative;
+}
+
+.carousel-track {
+    display: flex;
+    gap: 24px;
+    flex-wrap: nowrap;
+    width: 100%;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.furniture-card {
+    width: 100%;
+    flex-shrink: 0;
+    flex: 1;
+}
+
+
+/* Card — Image Box */
+.fc-image-box {
+    background: var(--bg-white);
+    border-radius: 24px;
+    padding: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    margin-bottom: 16px;
+    position: relative;
+    overflow: hidden;
+}
+
+.fc-image-box img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 16px;
+    display: block;
+}
+
+.fc-indicator {
+    width: 40%;
+    height: 4px;
+    background: #E0E0E0;
+    border-radius: 10px;
+    margin: 12px auto 0 auto;
+}
+
+
+/* Card — Meta Row (Title + Arrow btn + Nav btns) */
+.fc-meta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+}
+
+.fc-text {
+    flex: 1;
+}
+
+.fc-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 4px;
+    line-height: 1.2;
+}
+
+.fc-text span,
+.fc-text p {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* The diagonal arrow button (green circle, top-right corner action) */
+.fc-link-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transform: rotate(-45deg);
+    transition: background 0.2s ease;
+}
+
+.fc-link-btn:hover {
+    background: var(--primary-light);
+}
+
+/* Prev / Next navigation buttons */
+.fc-nav {
+    display: flex;
+    gap: 12px;
+    flex-shrink: 0;
+    justify-content: center;
+}
+
+.fc-nav-btn {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    transition: opacity 0.2s ease;
+}
+
+.fc-nav-btn:hover {
+    opacity: 0.85;
+}
+
+.fc-nav-btn.prev {
+    background: var(--primary-color);
+    color: white;
+}
+
+.fc-nav-btn.next {
+    background: var(--accent-color);
+    color: var(--text-dark);
+}
+
+
+/* FEATURES BAR */
+
+.features-bar-wrapper {
+    background-color: var(--bg-white);
+    padding: 40px 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.features-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.feature-icon {
+    position: relative;
+    width: 48px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feature-icon i {
+    font-size: 22px;
+    color: var(--text-dark);
+    z-index: 2;
+}
+
+.feature-icon::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    background-color: #FFD700;
+    border-radius: 50%;
+    bottom: 6px;
+    left: 4px;
+    z-index: 1;
+}
+
+.feature-text h3 {
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 4px 0;
+}
+
+.feature-text p {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin: 0;
+}
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 1024px) {
+    .hero-container {
+        gap: 40px;
+    }
+
+    .hero-content {
+        width: 50%;
+    }
+
+    .hero-visual {
+        width: 50%;
+    }
+
+    .carousel-track {
+        gap: 20px;
+    }
+
+    .fc-image-box img {
+        height: 240px;
+    }
+
+    .hero-title {
+        font-size: 40px;
+    }
+
+    .features-bar {
+        gap: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 40px 0 0 0;
+    }
+
+    .hero-container {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .hero-content {
+        width: 100%;
+    }
+
+    .hero-visual {
+        width: 100%;
+    }
+
+    .hero-title {
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .hero-description {
+        font-size: 14px;
+        margin-bottom: 24px;
+    }
+
+    .hero-buttons {
+        flex-wrap: wrap;
+        gap: 12px;
+        margin-bottom: 32px;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        padding: 12px 24px;
+        font-size: 14px;
+        flex: 1;
+        min-width: 140px;
+    }
+
+    .customer-reviews {
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .carousel-track {
+        flex-wrap: wrap;
+    }
+
+    .furniture-card {
+        flex: 0 1 calc(50% - 12px);
+    }
+
+    .fc-image-box img {
+        height: 200px;
+    }
+
+    .fc-text h3 {
+        font-size: 18px;
+    }
+
+    .fc-link-btn,
+    .fc-nav-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .features-bar {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .features-bar-wrapper {
+        padding: 30px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-title {
+        font-size: 24px;
+        margin-bottom: 12px;
+    }
+
+    .hero-description {
+        font-size: 13px;
+        margin-bottom: 20px;
+    }
+
+    .hero-buttons .btn-primary,
+    .hero-buttons .btn-secondary {
+        padding: 10px 18px;
+        font-size: 13px;
+        width: 100%;
+    }
+
+    .carousel-track {
+        gap: 12px;
+    }
+
+    .furniture-card {
+        flex: 0 1 100%;
+    }
+
+    .fc-image-box {
+        padding: 8px;
+    }
+
+    .fc-image-box img {
+        height: 160px;
+    }
+
+    .avatars img {
+        width: 32px;
+        height: 32px;
+        margin-left: -8px;
+    }
+
+    .avatars img:first-child {
+        margin-left: 0;
+    }
+
+    .avatar-plus {
+        width: 32px;
+        height: 32px;
+        margin-left: -8px;
+        font-size: 13px;
+    }
+
+    .review-text {
+        font-size: 12px;
+    }
+
+    .review-text strong {
+        font-size: 13px;
+    }
+
+    .feature-item {
+        gap: 12px;
+    }
+
+    .feature-icon {
+        width: 40px;
+        height: 40px;
+    }
+
+    .feature-icon i {
+        font-size: 18px;
+    }
+
+    .feature-text h3 {
+        font-size: 14px;
+    }
+
+    .feature-text p {
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,161 @@
+/* PROMOTIONAL BAR STYLES */
+
+.promo-bar {
+    background-color: var(--primary-color);
+    color: var(--bg-white);
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.promo-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.promo-contact {
+    align-items: center;
+    padding: 0 100px;
+}
+
+/* --- Center Text Styling --- */
+.promo-text strong {
+    font-weight: 700;
+}
+
+.promo-link {
+    color: var(--accent-color);
+    text-decoration: underline;
+    font-weight: 500;
+    margin-left: 5px;
+}
+
+.promo-link:hover {
+    color: var(--accent-hover);
+    text-decoration: none;
+}
+
+/* --- Social Icons --- */
+.promo-socials {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    padding: 0 100px;
+}
+
+.social-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    transition: var(--transition-smooth);
+}
+
+.social-icon i {
+    color: var(--primary-color);
+    font-size: 14px;
+}
+
+.social-icon:hover {
+    background-color: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+.social-icon img {
+    width: 12px;
+    height: 12px;
+}
+
+/* RESPONSIVE STYLES */
+
+@media (max-width: 1024px) {
+    .promo-contact {
+        padding: 0 40px;
+    }
+
+    .promo-socials {
+        padding: 0 40px;
+    }
+
+    .promo-text {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .promo-bar {
+        padding: 8px 0;
+        font-size: 11px;
+    }
+
+    .promo-container {
+        flex-wrap: wrap;
+        gap: 8px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .promo-contact {
+        padding: 0 16px;
+        width: 100%;
+        order: 1;
+    }
+
+    .promo-text {
+        padding: 0 16px;
+        width: 100%;
+        order: 2;
+        font-size: 11px;
+    }
+
+    .promo-socials {
+        padding: 0 16px;
+        width: 100%;
+        justify-content: center;
+        order: 3;
+        gap: 6px;
+    }
+
+    .social-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .social-icon i {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .promo-bar {
+        padding: 6px 0;
+        font-size: 10px;
+    }
+
+    .promo-contact {
+        padding: 0 12px;
+    }
+
+    .promo-text {
+        padding: 0 12px;
+        font-size: 10px;
+    }
+
+    .promo-socials {
+        padding: 0 12px;
+        gap: 4px;
+    }
+
+    .social-icon {
+        width: 18px;
+        height: 18px;
+    }
+
+    .social-icon i {
+        font-size: 10px;
+    }
+}
