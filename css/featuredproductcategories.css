@@ -36,7 +36,6 @@
     margin: 0;
 }
 
-.card,
 .card-large {
     display: flex;
     justify-content: flex-start;
@@ -44,6 +43,7 @@
     padding: 20px;
     gap: 20px;
     border-radius: 16px;
+    background-color: var(--bg-light);
 }
 
 .card-content {
