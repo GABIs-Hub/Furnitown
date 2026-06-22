@@ -16,6 +16,7 @@ Tagline: Your Home, Our Design
 # LAYOUT
 # HOW TO RUN
 # LICENSE
+# CONTRIBUTORS
         FEATURES
 1. Promotional Bar
     Contact information display (Call us: +123-456-789)
@@ -194,3 +195,50 @@ No build process required — pure HTML/CSS project
 
     LICENSE
 This project is licensed by MIT, so anyone can edit or enhance or revamp the code
+
+    CONTRIBUTORs
+  FRONTEND TEAM
+  
+• Ogabi David (Leader)
+
+• Jeremiah Awojinrin
+
+• Armand Akhabue
+
+• Kanu favour
+
+• Adeoba Adekoya
+
+• Havilah Joshua 
+
+  UI/UX TEAM
+  
+• Israel Olashore (Leader)
+
+• Semilore Adedeji
+
+• Moses Bolarinwa
+
+• Emannuel Folorunsho
+
+• Somefun Olaoluwa
+
+• Ajayi Taiye Steven
+
+• Onafuwa Emmanuel
+
+• Mafe Paul
+
+  DOCUMENTATION TEAM
+  
+• Tomiwa Akindele (Leader)
+
+• Sanni Tomiwa
+
+• Ricketts Bolanle
+
+• Olatunji Fawas
+
+• Godspower Joshua
+
+• Ojo Moyomade Elizabeth
